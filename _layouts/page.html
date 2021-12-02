@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href={{ "assets/css/main.css" | relative-url }}>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+  <title>FreedomBox</title>
+</head>
+<header>
+<nav>
+    <div class="page-navbar">
+      <div class="links">
+      <a class= "site-identity" href="/">FreedomBox</a>
+      <ul class="other-links">
+        <li class='main-nav'><a href="/about">About</a></li>
+
+        <li class='main-nav'><a href="/people">People</a></li>
+        <li class='main-nav'><a href="/build-or-buy">Build or Buy</a></li>
+        <li class='main-nav'><a href="/use-cases">Use Cases</a></li>
+        <li class="dropdown-icon">
+          <i class="fa fa-bars"></i>
+        
+          <ul class="dropdown">
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/people">People</a></li>
+            <li><a href="/build-or-buy">Build or Buy</a></li>
+            <li><a href="/use-cases">Use Cases</a></li>
+          </ul>
+        </li>
+    </span>
+  </div>
+    </div>
+</nav>
+</header>
+<body>
+    <div class="page-title-wrapper"><div class="page-title"><h2>{{ page.title }}</h2></div></div>
+    <div class= "page-wrapper">{{content}}</div>
+    </body>
+    <footer>{% include footer.html %}</footer>
+    </html>
